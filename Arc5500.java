@@ -28,7 +28,8 @@ public class Arc5500 {
             "--file", "-d", "--dir");
 
     public static void main(String[] args) {
-        if (args.length != 4) {
+        arg_limit=4;
+        if (args.length != arg_limit) {
             System.err
                     .println("ERROR: Unexpected number of command line arguments.");
             System.exit(1);
