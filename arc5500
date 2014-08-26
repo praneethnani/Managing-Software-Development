@@ -1,0 +1,5 @@
+#!/bin/sh
+mkdir temp wvtmp mp3tmp 
+javac  Arc5500.java
+java  -Xmx4096M Arc5500 $@
+rm -r temp wvtmp mp3tmp
